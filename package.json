@@ -39,10 +39,9 @@
 		"url": "https://github.com/MCStatusBot/minecraft-server-util"
 	},
 	"repository": {
-		"url": "https://github.com/MCStatusBot/minecraft-server-util",
+		"url": "git+https://github.com/MCStatusBot/minecraft-server-util.git",
 		"type": "git"
 	},
 	"homepage": "https://github.com/MCStatusBot/minecraft-server-util/wiki",
-	"dependencies": {
-	}
+	"dependencies": {}
 }
