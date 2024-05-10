@@ -1,5 +1,5 @@
 {
-	"name": "minecraft-server-util",
+	"name": "mcstatus-util",
 	"version": "5.4.4",
 	"description": "A Node.js library for Minecraft servers that can retrieve status, perform queries, and RCON into servers.",
 	"main": "dist/index.js",
@@ -22,7 +22,7 @@
 		"vote",
 		"votifier"
 	],
-	"author": "Jacob Gunther",
+	"author": "404invalid-user",
 	"license": "MIT",
 	"devDependencies": {
 		"@types/node": "^17.0.2",
@@ -36,13 +36,13 @@
 		"node": ">=10.0.0"
 	},
 	"bugs": {
-		"url": "https://github.com/PassTheMayo/minecraft-server-util"
+		"url": "https://github.com/MCStatusBot/minecraft-server-util"
 	},
 	"repository": {
-		"url": "https://github.com/PassTheMayo/minecraft-server-util",
+		"url": "https://github.com/MCStatusBot/minecraft-server-util",
 		"type": "git"
 	},
-	"homepage": "https://passthemayo.gitbook.io/minecraft-server-util/",
+	"homepage": "https://github.com/MCStatusBot/minecraft-server-util/wiki",
 	"dependencies": {
 		"minecraft-motd-util": "^1.1.9"
 	}
