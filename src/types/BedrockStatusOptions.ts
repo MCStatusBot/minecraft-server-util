@@ -1,4 +1,4 @@
 export interface BedrockStatusOptions {
-	enableSRV?: boolean,
-	timeout?: number
+  enableSRV?: boolean,
+  timeout?: number
 }

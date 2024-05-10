@@ -101,4 +101,4 @@ export const format = (input: string | ParseResult, options?: FormatOptions): st
   }
 
   return result;
-}
+};

@@ -1,4 +1,4 @@
 export interface SRVRecord {
-	host: string,
-	port: number
+  host: string,
+  port: number
 }

@@ -1,4 +1,3 @@
-import assert from 'assert';
 import { ParseOptions, ParseResult, ParseItem, FormattingProperties, Chat } from './types';
 
 const colorLookupNames: Record<string, string> = {
@@ -39,7 +38,7 @@ const parseText = (text: string, options: ParseOptions): ParseResult => {
   while (position + 1 <= text.length) {
     const character = text.charAt(position);
 
-    let item: ParseItem = result[result.length - 1];
+    const item: ParseItem = result[result.length - 1];
 
     if (character === '\n') {
       result.push({ text: '\n', color: 'gray' });
@@ -69,7 +68,7 @@ const parseText = (text: string, options: ParseOptions): ParseResult => {
 
     if (formattingCode in formattingLookupProperties) {
       if (item.text.length > 0) {
-        result.push({ ...item, text: '', [formattingLookupProperties[formattingCode]]: true })
+        result.push({ ...item, text: '', [formattingLookupProperties[formattingCode]]: true });
       } else {
         item[formattingLookupProperties[formattingCode]] = true;
       }
@@ -136,19 +135,17 @@ export const parse = (input: Chat | string, options?: ParseOptions): ParseResult
   let result;
 
   switch (typeof input) {
-    case 'string': {
-      result = parseText(input, options);
-
-      break;
-    }
-    case 'object': {
-      result = parseChat(input, options);
-
-      break;
-    }
-    default: {
-      throw new Error('Unexpected server MOTD type: ' + typeof input);
-    }
+  case 'string': {
+    result = parseText(input, options);
+    break;
+  }
+  case 'object': {
+    result = parseChat(input, options);
+    break;
+  }
+  default: {
+    throw new Error('Unexpected server MOTD type: ' + typeof input);
+  }
   }
 
   return result.filter((item) => item.text.length > 0);

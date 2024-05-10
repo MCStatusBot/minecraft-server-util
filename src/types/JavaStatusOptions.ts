@@ -1,4 +1,4 @@
 export interface JavaStatusOptions {
-	timeout?: number,
-	enableSRV?: boolean
+  timeout?: number,
+  enableSRV?: boolean
 }

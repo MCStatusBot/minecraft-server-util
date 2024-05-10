@@ -1,6 +1,6 @@
 {
 	"name": "mcstatus-util",
-	"version": "5.4.4",
+	"version": "5.4.5",
 	"description": "A Node.js library for Minecraft servers that can retrieve status, perform queries, and RCON into servers.",
 	"main": "dist/index.js",
 	"typings": "dist/index.d.ts",

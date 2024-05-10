@@ -80,4 +80,4 @@ export const toHTML = (tree: ParseResult, options?: HTMLOptions): string => {
   result += `</${opts.rootTag}>`;
 
   return result;
-}
+};
