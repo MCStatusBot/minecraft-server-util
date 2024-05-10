@@ -1,6 +1,6 @@
 import assert from 'assert';
 import crypto from 'crypto';
-import { clean, format, parse, toHTML } from 'minecraft-motd-util';
+import { clean, format, parse, toHTML } from './motd-util/index';
 import TCPClient from './structure/TCPClient';
 import { JavaStatusOptions } from './types/JavaStatusOptions';
 import { JavaStatusResponse } from './types/JavaStatusResponse';

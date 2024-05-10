@@ -1,5 +1,5 @@
 import assert from 'assert';
-import { clean, format, parse, toHTML } from 'minecraft-motd-util';
+import { clean, format, parse, toHTML } from './motd-util/index';
 import UDPClient from './structure/UDPClient';
 import { QueryOptions } from './types/QueryOptions';
 import { resolveSRV } from './util/srvRecord';

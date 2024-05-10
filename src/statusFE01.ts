@@ -1,5 +1,5 @@
 import assert from 'assert';
-import { clean, format, parse, toHTML } from 'minecraft-motd-util';
+import { clean, format, parse, toHTML } from './motd-util/index';
 import TCPClient from './structure/TCPClient';
 import { JavaStatusOptions } from './types/JavaStatusOptions';
 import { JavaStatusFE01Response } from './types/JavaStatusFE01Response';
