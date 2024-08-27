@@ -84,6 +84,8 @@ const parseChat = (chat: Chat, options: ParseOptions, parent?: Chat): ParseResul
   const result: ParseResult = parseText(chat.text || chat.translate || '', options);
   const item: ParseItem = result[0];
 
+  if (typeof chat === 'string') chat = { text: chat };
+
   if (((parent && parseBool(parent.bold)) && !parseBool(chat.bold)) || parseBool(chat.bold)) {
     item.bold = true;
   }
